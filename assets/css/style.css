@@ -78,7 +78,7 @@ img { max-width: 100%; }
 
 .top-content { width: 100%; padding: 0; }
 
-.top-content .carousel-item { height: 100vh; min-height: 800px; }
+.top-content .carousel-item { height: 100vh; min-height: 700px; }
 .top-content .carousel-item img { height: 100%; object-fit: cover;left: 10px; }
 
 .top-content .carousel-control-prev { border-bottom: 0; }
