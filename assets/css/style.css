@@ -78,13 +78,13 @@ img { max-width: 100%; }
 
 .top-content { width: 100%; padding: 0; }
 
-.top-content .carousel-item { height: 100vh; min-height: 600px; }
+.top-content .carousel-item { height: 100vh; min-height: 800px; }
 .top-content .carousel-item img { height: 100%; object-fit: cover;left: 10px; }
 
 .top-content .carousel-control-prev { border-bottom: 0; }
 .top-content .carousel-control-next { border-bottom: 0; }
 
-.top-content .carousel-caption { padding-bottom:60px;text-decoration: none; font-size: larger; top: 25%;}
+.top-content .carousel-caption { padding-bottom:60px;text-decoration: none; font-size: larger; bottom: 25%;}
 .top-content .carousel-caption h1 {padding-top: 60px; color: #fff;font-style:normal; font-size:2em;}
 .top-content .carousel-caption .carousel-caption-description { color: #fff; color: rgba(255, 255, 255, 0.8);font-size: small;  }
 
