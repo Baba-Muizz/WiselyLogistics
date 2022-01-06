@@ -101,20 +101,20 @@
        
 <footer>
 	<div class="container">
-	  <div class="row">
-		<div class="col-md-6">
-		  <h4 class="text-left" >Contact Us</h4>
-		  <div class="form" id="contact">
-			<form action="" onsubmit="return validateForm()" method="">
-			  <p id="errorMessage" class="redBg" style="font-size: large;"></p>
-			  <input type="text" placeholder="Name" onkeypress="return validateName(event)" id="name" class="form-control">
-			  <input type="text" placeholder="Phone" id="phone" class="form-control">
-			  <input type="email" placeholder="E-Mail" id="email" class="form-control">
-			  <textarea name="message" id="message" placeholder="Enter Message Here..." cols="30" rows="10" class="form-control message"></textarea>
-			  <button class="submit_button pull-right form-control" id="submit">Submit</button>
-			</form>
+		<div class="row">
+		  <div class="col-md-6">
+			<h4 class="text-left" >Contact Us</h4>
+			<div class="form" id="contact" >
+			  <form action="https://formspree.io/f/mbjpyvag"  onsubmit="return validateForm()" method="post">
+				<p id="errorMessage" class="redBg" style="font-size: large;"></p>
+				<input type="text" name="Name" placeholder="Name" onkeypress="return validateName(event)" id="name" class="form-control">
+				<input type="text" placeholder="Phone" name="Phone " id="phone" class="form-control">
+				<input type="email" placeholder="E-Mail" name="Email" id="email" class="form-control">
+				<textarea name="Message" id="message" placeholder="Enter Message Here..." cols="30" rows="10" class="form-control message"></textarea>
+				<button class="submit_button pull-right form-control" id="submit">Submit</button>
+			  </form>
+			</div>
 		  </div>
-		</div>
   
 		<div class="col-md-6 ">
 		  <h4 class="text-left">Areas We Cover</h4>
