@@ -345,13 +345,20 @@ section.about_us{
 /* Section Quote  */
 
 section.quote{
-	padding: 10px;
+	padding:0px 5px;
 	margin: 90px 0px 0px 0px;
 	background-color: rgb(245, 245, 245);
 	
   }
   section.quote form{
 	text-align: left;
+  }
+  section.quote .form-control{
+		
+		margin: 5px 0px;
+  }
+  section.quote label{
+	margin: 0.5rem 0rem 0rem 0rem;
   }
   .col-md-6 {
 	margin: 0px;
