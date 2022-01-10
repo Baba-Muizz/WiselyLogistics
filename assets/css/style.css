@@ -384,6 +384,9 @@ section.quote{
 
   section.faq button{
 	  margin:1px 0px;
+	  overflow-x: scroll;
+	  overflow-y: hidden;
+	  white-space: nowrap;
   }
   section.faq button:hover{
 	  background-color:#fd6b02;
