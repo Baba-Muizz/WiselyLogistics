@@ -74,7 +74,33 @@ document.getElementById('year').innerHTML= year;
   }
 
 
-// Date picker 
+
+  
+// 01
+// $(document).ready(function () {
+// 02
+//   $('#collection-date input').on('change', function() { 
+// 03
+//     var datearray = $('#collection-date input').val().split("-");
+// 04
+//     var montharray = ["Jan", "Feb", "Mar","Apr", "May", "Jun","Jul", "Aug", "Sep","Oct", "Nov", "Dec"];
+// 05
+//     var year = "20" + datearray[2];
+// 06
+//     var month = montharray.indexOf(datearray[1])+1;
+// 07
+//     var day = datearray[0];
+// 08
+//     var minDate = (year +"-"+ month +"-"+ day);
+// 09
+//     $('#delivery-date input').attr('min',minDate); 
+// 10
+//   });
+// 11
+// });
+
+
+// Collection Date picker 
 
 var today = new Date();
 var dd = today.getDate();
@@ -82,11 +108,40 @@ var mm = today.getMonth()+1; //January is 0 so need to add 1 to make it 1!
 var yyyy = today.getFullYear();
 if(dd<10){
   dd='0'+dd
+  console.log(dd);
 } 
 if(mm<10){
   mm='0'+mm
 } 
 
 today = yyyy+'-'+mm+'-'+dd;
+
 document.getElementById("collection-date").setAttribute("min", today);
-document.getElementById("delivery-date").setAttribute("min", today);
+
+// Delivery Date Picker 
+
+var deliveryDate = new Date(+ new Date() + 86400000*2);
+var ccc = deliveryDate.getDate();
+var mmm = deliveryDate.getMonth()+1; //January is 0 so need to add 1 to make it 1!
+var yyy = deliveryDate.getFullYear();
+
+if(ccc<=10){
+    ccc='0'+ccc
+  } 
+  if(mm<10){
+    mmm='0'+mmm
+  } 
+  
+deliveryDate = yyy+'-'+mmm+'-'+ccc;
+document.getElementById("delivery-date").setAttribute("min", deliveryDate);
+
+
+// FAQ DROP DOWN 
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }

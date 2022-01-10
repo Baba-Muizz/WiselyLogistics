@@ -324,8 +324,8 @@ footer {
 
 
   /* About US Page  */
-section.about_us{
-	margin: 150px 10px 10px 10px;
+section.about_us, section.faq{
+	margin: 150px 10px 100px 10px;
 	color:#000;
   }
   
@@ -354,8 +354,7 @@ section.quote{
 	text-align: left;
   }
   section.quote .form-control{
-		
-		margin: 5px 0px;
+    margin: 5px 0px;
   }
   section.quote label{
 	margin: 0.5rem 0rem 0rem 0rem;
@@ -379,4 +378,21 @@ section.quote{
   .submit-btn:hover{
 	background-color: #252525;
 	color: #fff;
+  }
+
+  /* faq  */
+
+  section.faq button{
+	  margin:1px 0px;
+  }
+  section.faq button:hover{
+	  background-color:#fd6b02;
+	  border: none;
+  }
+  section.faq button:focus{
+	  background-color:#fd6b02;
+	  border: none;
+  }
+  .w3-bg-color{
+	  background-color: rgb(223, 222, 222);
   }
